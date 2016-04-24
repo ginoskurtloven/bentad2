@@ -1,6 +1,8 @@
 <?php
-// database connection
+
 include('class/db_connection.php');
+include('class/user.php');
+
 ?>
 
 <!DOCTYPE html>

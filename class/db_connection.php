@@ -1,30 +1,41 @@
 <?php 
 
 class Database {
-
+	//Database Information
 	protected $database_host = "localhost";
 	protected $database_username = "root";
 	protected $database_password = "root";
 	protected $database_name = "bentad2";
 
-	//Connect to database
+	//Function Connect
 	public function connect() {
-
-		//$mysqli = new mysqli("localhost", "my_user", "my_password", "world");
-		$connection = new mysqli($database_host, $database_username, $database_password, $database_name);
-
+		$connection = new mysqli($this->database_host, $this->database_username, $this->database_password, $this->database_name);
 		//Check Connection
 		if ($connection->connect_errno) {
-			printf("Database Connection Failed %s\n", $connection->connect_error);
+			echo("Database Connection Failed %s\n" . $connection->connect_error);
 			exit(); //Cut the Process
-		} else {
-			echo "We are connected";
 		}
-
+		return $connection;
 	}
+
+	//Insert User
+	public function insert($user_full_name,$user_username,$user_email_add,$user_password) {
+		$result = mysqli_query($this->connect(), "INSERT user(user_full_name,username,user_email_add,password) VALUES('$user_full_name','$user_username','$user_email_add','$user_password')");
+		return $result;
+	}
+
+
+	//Select
+	public function select() {
+		$result = mysqli_query("SELECT * FROM user");
+		return $result;
+	}
+
+
 }
+//Instatntiate
 
-$database_con = new Database();
 
-
+// Test if it is connected
+//$database_con->connect();
  ?>

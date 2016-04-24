@@ -38,13 +38,9 @@
 				$user_email_add = $_POST['email_add'];
 				$user_password = $_POST['password'];
 
-				
-				$connection = $database_con->connect();
-				mysqli_query($connection, "INSERT INTO user (user_full_name,username,user_email_add,password) 
-				 	VALUES ('$user_full_name','$user_username','$user_email_add','$user_password' )");
+				$connection = new Database();
 
-				 mysqli_close($connection);
-				
+				$connection->insert($user_full_name,$user_username,$user_email_add,$user_password);
 			}
 
 		 ?>

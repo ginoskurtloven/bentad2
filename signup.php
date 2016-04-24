@@ -30,7 +30,6 @@
 
 	<!-- Form Process -->
 		<?php 
-
 			if (isset($_POST['signup'])) {
 
 				$user_full_name = $_POST['full_name'];

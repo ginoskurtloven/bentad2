@@ -4,5 +4,5 @@
 
 ****TODO List*********
 
-1. Build the Signup form using OOP style in PHP.
-2. Fix the Database Class
+1. Create the Product Database And Start Adding Product
+2. Build the Add Product Page

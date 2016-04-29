@@ -16,7 +16,7 @@
 				</div>
 				<div class="form-group">
 					<label for="">Category</label>
-					<select name="" id="" class="form-control">
+					<select name="item_category" id="" class="form-control">
 						<option value="laptop">Computers</option>
 						<option value="mobile">Mobile</option>
 						<option value="clothes">Clothes</option>
@@ -33,15 +33,15 @@
 				</div>
 				<div class="form-group">
 					<label for="price">Price</label>
-					<input type="text" class="form-control">
+					<input type="text" class="form-control" name="item_price">
 				</div>
 				<div class="form-group">
 					<label for="condition">Condition</label>
-					<input type="text" class="form-control">
+					<input type="text" class="form-control" name="item_condition">
 				</div>
 				<div class="form-group">
 					<label for="location">Location</label>
-					<select name="" id="" class="form-control">
+					<select name="item_location" id="" class="form-control">
 						<option value="">Location 1</option>
 						<option value="">Location 2</option>
 						<option value="">Location 3</option>
@@ -51,15 +51,35 @@
 				</div>
 				<div class="form-group">
 					<label for="">Description</label>
-					<textarea name="" id="" cols="50" rows="10" class="form-control"></textarea>
+					<textarea name="item_desc" id="" cols="50" rows="10" class="form-control"></textarea>
 				</div>
 				<div class="form-group">
 					<label for="">Listing Image</label>
 					<input type="file" name="ListingImage">
 				</div>
-				<input class="btn btn-default btn-md" type="submit" name="" value="Submit Listing">
+				<input class="btn btn-default btn-md" type="submit" name="add_listing" value="Submit Listing">
 			</form>
 		</div>
+
+		<!-- form Process -->
+		<?php 
+
+			if (isset($_POST['add_listing'])) {
+				//Get the data that sends from form
+				$item_name = $_POST['item_name'];
+				$item_category = $_POST['item_category'];
+				$item_price = $_POST['item_price'];
+				$item_condition = $_POST['item_condition'];
+				$item_location = $_POST['item_location'];
+				$item_desc = $_POST['item_desc'];
+
+			$query =  new Listing();
+			$query->add_listing($item_name,$item_category,$item_price,$item_condition,$item_location,$item_desc);
+
+			}
+		 ?>
+
+
 	</div>
 </div>
 <!-- Include Footer -->

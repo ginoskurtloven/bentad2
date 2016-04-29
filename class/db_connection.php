@@ -33,9 +33,4 @@ class Database {
 
 
 }
-//Instatntiate
-
-
-// Test if it is connected
-//$database_con->connect();
  ?>

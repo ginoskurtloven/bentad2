@@ -1,5 +1,3 @@
-
-
 <!-- Header Include -->
 <?php include('inc/header.php'); ?>
 	<body>
@@ -8,14 +6,13 @@
 		<nav></nav>
 		<section>
 			<div class="container">
-			 <?php $db_connection->connect(); ?>
 				<div class="row">
 				<div class="sidebar-dashboard">
 					<div class="col-md-4">
 						<h2>Sidebar Area</h2>
 						<p>Kurt Loven Ginos</p>
-						<p><a href="listing.php">Add Listing</a></p>
-						<p><a href="profile.php">Profile Settings</a></p>
+						<p><i class="fa fa-star-o" aria-hidden="true"></i><a href="listing.php"> Add Listing</a></p>
+						<p><i class="fa fa-user" aria-hidden="true"></i><a href="profile.php"> Profile Settings</a></p>
 					</div>
 					<div class="col-md-8">
 						<h3>Dashboard Area</h3>

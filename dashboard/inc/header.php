@@ -1,8 +1,9 @@
 <!-- Database Connection Test -->
 <?php 
-  require('class/db_connection.php');
+  include('../class/db_connection.php');
+  include('../class/listing.php');
  ?>
-
+ 
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -15,6 +16,7 @@
     <!-- Bootstrap -->
     <link href="css/bootstrap.css" rel="stylesheet">
     <link rel="stylesheet" href="css/bootstrap-theme.css">
+    <link rel="stylesheet" href="../css/font-awesome/font-awesome-4.6.1/css/font-awesome.min.css">
     <!-- Stylesheet -->
     <link rel="stylesheet" href="css/style.css">
 

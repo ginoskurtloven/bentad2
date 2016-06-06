@@ -1,10 +1,6 @@
-<?php
-
-include('class/db_connection.php');
-include('class/user.php');
-
-?>
-
+<?php session_start();?>
+<?php ob_start(); ?>
+<?php include('init.php');?>
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -20,6 +16,9 @@ include('class/user.php');
 
     <!-- Stylesheet -->
     <link rel="stylesheet" href="css/style.css">
+    
+	<!-- Font Awesome -->
+	<link rel="stylesheet" href="css/font-awesome/font-awesome-4.6.3/css/font-awesome.css">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -28,3 +27,4 @@ include('class/user.php');
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
   </head>
+  <body>

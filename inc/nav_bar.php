@@ -36,15 +36,16 @@
         <button type="submit" class="btn btn-default">Submit</button>
       </form>
       <ul class="nav navbar-nav navbar-right">
+		<li><a href="user/">User Dashboard</a></li>
         <li><a href="dashboard/">Dashboard</a></li>
         <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Login/SignUp <span class="caret"></span></a>
           <ul class="dropdown-menu">
             <li><a href="login.php">Login</a></li>
             <li><a href="signup.php">SignUp</a></li>
-            <li><a href="support.php">Support</a></li>
             <li role="separator" class="divider"></li>
-            <li><a href="#">Separated link</a></li>
+            <li><a href="support.php">Support</a></li>
+            <!-- <li><a href="#">Separated link</a></li> -->
           </ul>
         </li>
       </ul>

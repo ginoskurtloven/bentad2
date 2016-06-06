@@ -9,6 +9,9 @@
 			<h3>Sidebar Area</h3>
 		</div>
 		<div class="col-md-8">
+		<!-- javascript Action to refresh the page -->
+		<a href="javascript:location.reload(true)">Refresh this page</a>
+		
 			<form action="" method="POST">
 				<div class="form-group">
 					<label for="item_name">Item Name</label>
@@ -42,11 +45,11 @@
 				<div class="form-group">
 					<label for="location">Location</label>
 					<select name="item_location" id="" class="form-control">
-						<option value="">Location 1</option>
-						<option value="">Location 2</option>
-						<option value="">Location 3</option>
-						<option value="">Location 4</option>
-						<option value="">Location 5</option>
+						<option value="1">Location 1</option>
+						<option value="2">Location 2</option>
+						<option value="3">Location 3</option>
+						<option value="4">Location 4</option>
+						<option value="5">Location 5</option>
 					</select>
 				</div>
 				<div class="form-group">

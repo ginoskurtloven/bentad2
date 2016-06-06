@@ -1,6 +1,4 @@
-<!-- Header Included -->
 <?php include('inc/header.php'); ?>
-<body>
 <!-- Include Navigation -->
 <?php include('inc/nav_bar.php'); ?>
 <div class="container">
@@ -11,37 +9,38 @@
 			<form action="<?php $_SERVER['REQUEST_URI']; ?>" method="POST">
 			<div class="form-group">
 				<label for="">Full name</label>
-				<input class="form-control" type="text" placeholder="First Name" name="full_name">
+				<input class="form-control" type="text" placeholder="Full Name" name="full_name" required>
 			</div>
 			<div class="form-group">
 				<label for="Last Name">Username</label>
-				<input class="form-control" type="text" placeholder="Last Name" name="username">
+				<input class="form-control" type="text" placeholder="Username" name="username" required>
 			</div>
 			<div class="form-group">
 				<label for="email_add">Email Address</label>
-				<input class="form-control" type="email" placeholder="you@youremailaddress.com" name="email_add">
+				<input class="form-control" type="email" placeholder="you@youremailaddress.com" name="email_add" required>
 			</div>
 			<div class="form-group">
 				<label for="password">Password</label>
-				<input class="form-control" type="password" name="password" placeholder="password">
+				<input class="form-control" type="password" name="password" placeholder="password" required>
 			</div>
-			<input class="btn btn-warning btn-lg" type="submit" name="signup" placeholder="Sign up">
+			<input class="btn btn-default btn-md" type="submit" name="signup" value="REGISTER">
 			</form>
-
-	<!-- Form Process -->
 		<?php 
+		//Form Process
 			if (isset($_POST['signup'])) {
-
-				$user_full_name = $_POST['full_name'];
-				$user_username = $_POST['username'];
-				$user_email_add = $_POST['email_add'];
-				$user_password = $_POST['password'];
-
+				
 				$connection = new Database();
-
-				$connection->insert($user_full_name,$user_username,$user_email_add,$user_password);
+				
+				//Get the Data from form
+				$full_name = mysqli_real_escape_string($connection->connect(), $_POST['full_name']); // Escape before Sending to query
+				$username = mysqli_real_escape_string($connection->connect(), $_POST['username']);
+				$email_add = mysqli_real_escape_string($connection->connect(), $_POST['email_add']);
+				$password = mysqli_real_escape_string($connection->connect(), $_POST['password']);
+					 
+				$user = new User();
+				//Inster the Data and call the add_user() funciton.
+				$query = $user->add_user($full_name,$username,$email_add,$password);
 			}
-
 		 ?>
 		</div>
 		<div class="col-md-6">
@@ -49,15 +48,13 @@
 			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae in, unde provident sit ratione quis aliquid porro obcaecati, cum assumenda? Deserunt aperiam, quasi ratione sit quas tempora cum nam fuga.</p>
 
 			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt, perferendis nihil beatae, inventore sed expedita commodi vero itaque voluptas sapiente numquam omnis eveniet ratione. Sed libero voluptate nemo quam, commodi.</p>
-		</div>
-</div>
 
+			<p>If you are already a Member Click the Login Button Bellow.</p>
+			<p onclick="window.location.href='login.php'" class="btn btn-success btn-md">LOGIN HERE</p>
+		</div>
+
+</div>
+<h1>&nbsp;</h1>
+<h1>&nbsp;</h1>
 <!-- Include Footer -->
 <?php include('inc/footer.php'); ?>
-<!-- end of footer -->
-<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="js/jquery.min.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="js/bootstrap.js"></script>
-</body>
-</html>

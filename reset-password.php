@@ -1,10 +1,6 @@
-<!-- Include Header -->
 <?php include('inc/header.php'); ?>
-
-<body>
 	<!-- Include Navigation -->
 <?php include('inc/nav_bar.php'); ?>
-
 <div class="container">
 	<div class="row">
 		<div class="col-md-5">
@@ -23,9 +19,9 @@
 		</div>
 	</div>
 </div>
-<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="js/bootstrap.js"></script>
-</body>
-</html>
+<h1 style="display: hidden; ">&nbsp;</h1> <!-- Spacing Purpose -->
+<h1 style="display: hidden; ">&nbsp;</h1> <!-- Spacing Purpose -->
+<h1 style="display: hidden; ">&nbsp;</h1> <!-- Spacing Purpose -->
+<h1 style="display: hidden; ">&nbsp;</h1> <!-- Spacing Purpose -->
+<h1 style="display: hidden; ">&nbsp;</h1> <!-- Spacing Purpose -->
+<?php include('inc/footer.php');?>

@@ -1,9 +1,9 @@
-<!-- Database Connection Test -->
-<?php 
-  include('../class/db_connection.php');
-  include('../class/listing.php');
- ?>
- 
+<?php include('../class/db_connection.php'); ?>
+<?php include('../class/listing.php'); ?>
+<?php if(empty($_SESSION['user_username']) && empty($_SESSION['user_password'])) {
+    header('location: ../login.php');
+    }
+?>
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -17,6 +17,7 @@
     <link href="css/bootstrap.css" rel="stylesheet">
     <link rel="stylesheet" href="css/bootstrap-theme.css">
     <link rel="stylesheet" href="../css/font-awesome/font-awesome-4.6.1/css/font-awesome.min.css">
+    
     <!-- Stylesheet -->
     <link rel="stylesheet" href="css/style.css">
 

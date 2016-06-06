@@ -1,7 +1,7 @@
 <?php 
-
 class Database {
 	//Database Information
+	
 	protected $database_host = "localhost";
 	protected $database_username = "root";
 	protected $database_password = "root";
@@ -33,4 +33,4 @@ class Database {
 
 
 }
- ?>
+?>

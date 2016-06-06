@@ -1,0 +1,56 @@
+/*category box*/
+.cat-box {
+	background-color: #f3f3f3;
+	padding-top: 20px; 
+	padding-bottom: 20px;
+}
+
+.cat-box a {
+	text-decoration: none;
+	color: #000;
+	text-transform: uppercase;
+}
+
+.product-price {
+	color: #28A9D1;
+	font-size: 15px;
+	font-weight: bold;
+	/*letter-spacing: 0px;*/
+	/*padding: 0px 20px;*/
+}
+
+.spacer {
+	
+	height: 50px;
+	margin: 0;
+	padding: 0;
+
+}
+/**
+ * Search bar
+ */
+.search-area {
+	background-color: #f3f3f3;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	max-height: 80px;
+}
+
+/*
+NOTE: All the Style in the User Area are Here!
+User Area STYLE
+*/
+
+.user-profile {
+	width: 150px;
+	height: 150px;
+	border-radius: 50%;
+	margin-bottom: 20px;
+	margin-top: 20px;
+}
+
+.user-stat-count {
+	font-size: 32px;
+	font-weight: 500;
+	text-align: center;
+}

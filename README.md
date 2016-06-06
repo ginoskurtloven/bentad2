@@ -37,6 +37,8 @@ Add the ff: Category / Location
 
 4. Reasearch on How to Prevent Image from Duplicate on Uploading it on the adding product image section.
 
+5. Build 404 Page
+
 
 
 

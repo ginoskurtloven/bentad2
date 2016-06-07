@@ -15,9 +15,25 @@
 			</ul>
 		</div>
 		<div class="col-md-3">
-			
+			<ul>
+			<h4 style="text-align: left">Category</h4>
+				<li>Electronics</li>
+				<li>Computer and Gadgets</li>
+				<li>Cars and Vehicles</li>
+				<li>Musical Instrument</li>
+				<li>Home and Appliances</li>
+				<li>Clothing and Accessories</li>
+			</ul>	
 		</div>
-		<div class="col-md-3"></div>
+		<div class="col-md-3">
+			<h4 style="text-align: left;">Location</h4>
+			<ul>
+				<li>Manila City</li>
+				<li>Cebu City</li>
+				<li>Zamboanga City</li>
+				<li>Quezon City</li>
+			</ul>
+		</div>
 	</div>
 </div>
 </footer>

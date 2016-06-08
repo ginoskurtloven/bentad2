@@ -57,7 +57,21 @@ public function get_all_cat1() {
 	return $result;
 }
 
-//Get All Add Data by Passing Listing ID
+/* GET ALL LISTING COMPUTER AND GADGETS(ID2) */
+public function get_all_cat2() {
+	global $connection;
+
+	$query = mysqli_query($connection->connect(), "SELECT * FROM listing WHERE item_category = '2'");
+	$result = array(); //Set A Blank array and assign
+	while ($record = mysqli_fetch_array($query)) {
+		$result[] = $record;
+	}
+	return $result;
+}
+
+
+
+//Get All the Data in Product by passing id in this function
 public function get_by_id($item_id) {
 	global $connection;
 	$query = "SELECT * FROM listing WHERE item_id='$item_id'";
@@ -84,6 +98,17 @@ public function get_by_id($item_id) {
 	}
 	return $row;
 	}
-}
 
+	// Get count of Rows by category
+	public function get_num_rows($category_id) {
+		global $connection;
+		$query = "SELECT * FROM listing WHERE item_category = $category_id";
+		if ($result = mysqli_query($connection->connect(),$query)) {
+			#if TRUE
+			$result_count = mysqli_num_rows($result);
+		}
+		return $result_count;
+	}
+
+}
 ?>

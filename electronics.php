@@ -1,5 +1,6 @@
 <?php include('inc/header.php');?>
 <?php include('inc/nav_bar.php');?> <!-- Include Navigation -->
+<?php $Listing = new Listing(); ?>
 <div class="container">
 	<div class="col-md-3">
 	<h2>Electronics</h2>
@@ -15,17 +16,20 @@
 	</div>
 	<div class="col-md-9">
 		<h4>ELECTRONICS</h4>
-		<p>We found 287 Ad Post for the category " Electronics "</p>
+		<?php
+		$category_id = '1'; 
+		$count = $Listing->get_num_rows($category_id);
+		?>
+		<p>We found <?php echo $count; ?> Ad Post for the category " Electronics "</p>
 		<hr>
 		<div class="row">
 		<?php
-		$item = new Listing();
-		$result = $item->get_all_cat1();
+		$result = $Listing->get_all_cat1();
 		for ($x=0; $x < count($result) ; $x++) { ?>
 
 			<div class="col-md-3">
 				    <div class="thumbnail">
-				      <a href="adds.php?id=<?php echo $result[$x][0];?>"><img src="img/product1.jpg" alt="<?php echo $result[$x][1]; ?>"></a>
+				      <a href="adds.php?id=<?php echo $result[$x][0];?>"><img class="img-responsive" src="img/product_thumb.png" alt="<?php echo $result[$x][1]; ?>"></a>
 				      <div class="caption">
 				        <h5><?php echo $result[$x][1];?></h5>
 				        <h6 class="product-price">₱<?php echo $result[$x][3];?></h6>

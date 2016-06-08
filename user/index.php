@@ -10,14 +10,13 @@
 			$user_username = $_SESSION['user_email_add'];
 			$userinfo = $user->Fetch($user_username);
 		 ?>
-		
 		<a href="profile.php"><img class="user-profile" src="<?php echo $userinfo['avatar'];?>" alt="User Name"></a>
-		<?php echo "<p style='font-weight: 500;'>" . $userinfo['user_full_name'] . "</p>"; ?><br>
+		<?php echo "<p style='font-weight: 500; text-align: center;'>" . $userinfo['user_full_name'] . "</p>"; ?><br>
 		<p onclick="window.location.href='add-listing.php'" class="btn btn-default btn-block"> Post Adds</p>
 		<br>
 		<p onclick="window.location.href='profile.php'" class="btn btn-default btn-block"> Profile Setting</p>
+	</div> <!-- End of Sidebar -->
 
-	</div>
 	<div class="col-md-9">
 	<div class="alert alert-info" role="alert">
 	<span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>

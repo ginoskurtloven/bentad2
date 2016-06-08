@@ -65,8 +65,8 @@
 				  </div>
 				 <div class="col-md-4"> 
          <div class="cat-box">
-  					<center><i class="fa fa-car fa-3x" aria-hidden="true"></i></center>
-  					<p style="text-align: center;">Cars & Vehicles</p>
+  					<center><i onclick="window.location.href='cars-and-vehicles.php'"  class="fa fa-car fa-3x" aria-hidden="true"></i></center>
+  					<p style="text-align: center;"><a href="cars-and-vehicles.php">Cars & Vehicles</a></p>
           </div>
 				 </div>
 			 </div>
@@ -74,20 +74,20 @@
 			 <div class="row">
 				 <div class="col-md-4"> 
          <div class="cat-box">
-					 <center><i class="fa fa-music fa-3x" aria-hidden="true"></i></center>
-					<p style="text-align: center;">Musical Instrument</p>
+					 <center><i onclick="window.location.href='musical-instrument.php'"  class="fa fa-music fa-3x" aria-hidden="true"></i></center>
+					<p style="text-align: center;"><a href="musical-instrument.php">Musical Instrument</a></p>
           </div>
 				 </div>
 				 <div class="col-md-4"> 
          <div class="cat-box">
-					 <center><i class="fa fa-home fa-3x" aria-hidden="true"></i></center>
-					 <p style="text-align: center;">Home and Appliances</p>
+					 <center><i onclick="window.location.href='home-and-appliances.php'" class="fa fa-home fa-3x" aria-hidden="true"></i></center>
+					 <p style="text-align: center;"><a href="home-and-appliancers.php"/>Home and Appliances</a></p>
           </div>
 				 </div>
 				 <div class="col-md-4"> 
          <div class="cat-box">
-					<center><i class="fa fa-dot-circle-o fa-3x" aria-hidden="true"></i></center>
-					<p style="text-align: center;">Clothing and Accessories</p>
+					<center><i onclick="window.location.href='clothing-and-accessories.php'" class="fa fa-dot-circle-o fa-3x" aria-hidden="true"></i></center>
+					<p style="text-align: center;"><a href="clothing-and-accessories.php">Clothing and Accessories</a></p>
          </div> 
 				 </div>
 			 </div>

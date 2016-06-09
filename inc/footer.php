@@ -5,13 +5,13 @@
 			<p>Website Crafted by GinosKurtLoven</p>
 		</div>
 		<div class="col-md-3">
-		<h4 style="text-align: left;">Sitemap</h4>
+			<h4 style="text-align: left;">Sitemap</h4>
 			<ul style="text-decoration: none;">
-				<li style="text-decoration: none;">Home</li>
-				<li>About Us</li>
-				<li>Signup</li>
-				<li>Login</li>
-				<li>Support</li>
+				<li><a style="text-decoration: none;" href="index.php">Home</a></li>
+				<li><a style="text-decoration: none;" href="about-us.php">About Us</a></li>
+				<li><a style="text-decoration: none;" href="signup.php">Signup</a></li>
+				<li><a style="text-decoration: none;" href="login.php">Login</a></li>
+				<li><a style="text-decoration: none;" href="support.php">Support</a></li>
 			</ul>
 		</div>
 		<div class="col-md-3">

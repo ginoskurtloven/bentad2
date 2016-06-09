@@ -18,5 +18,7 @@
 
 		</div>
 	</div>
+	<h1>&nbsp;</h1>
+	<h1>&nbsp;</h1>
 </div>
 <?php include('inc/footer.php');?>

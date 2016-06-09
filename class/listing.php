@@ -96,8 +96,8 @@ public function get_by_id($item_id) {
 		}
 
 	}
-	return $row;
-	}
+		return $row;
+}
 
 	// Get count of Rows by category
 	public function get_num_rows($category_id) {
@@ -107,8 +107,9 @@ public function get_by_id($item_id) {
 			#if TRUE
 			$result_count = mysqli_num_rows($result);
 		}
-		return $result_count;
+			return $result_count;
 	}
 
 }
+
 ?>

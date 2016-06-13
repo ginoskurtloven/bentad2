@@ -5,8 +5,8 @@
 			<p>Website Crafted by GinosKurtLoven</p>
 		</div>
 		<div class="col-md-3">
+			<ul style="list-style: none;">
 			<h4 style="text-align: left;">Sitemap</h4>
-			<ul style="text-decoration: none;">
 				<li><a style="text-decoration: none;" href="index.php">Home</a></li>
 				<li><a style="text-decoration: none;" href="about-us.php">About Us</a></li>
 				<li><a style="text-decoration: none;" href="signup.php">Signup</a></li>
@@ -15,23 +15,22 @@
 			</ul>
 		</div>
 		<div class="col-md-3">
-			<ul>
+			<ul style="list-style: none;">
 			<h4 style="text-align: left">Category</h4>
-				<li>Electronics</li>
-				<li>Computer and Gadgets</li>
-				<li>Cars and Vehicles</li>
-				<li>Musical Instrument</li>
-				<li>Home and Appliances</li>
-				<li>Clothing and Accessories</li>
+				<li><a style="text-decoration: none;" href="electronics.php">Electronics</a></li>
+				<li><a style="text-decoration: none;" href="computer-gadgets.php">Computer and Gadgets</a></li>
+				<li><a style="text-decoration: none;" href="cars-and-vehicles.php">Cars and Vehicles</a></li>
+				<li><a style="text-decoration: none;" href="musical-instrument.php">Musical Instrument</a></li>
+				<li><a style="text-decoration: none;" href="home-and-appliances.php">Home and Appliances</a></li>
+				<li><a style="text-decoration: none;" href="clothing-and-accessories.php">Clothing and Accessories</a></li>
 			</ul>	
 		</div>
 		<div class="col-md-3">
+			<ul style="list-style: none;">
 			<h4 style="text-align: left;">Location</h4>
-			<ul>
-				<li>Manila City</li>
-				<li>Cebu City</li>
-				<li>Zamboanga City</li>
-				<li>Quezon City</li>
+				<li>Luzon</li>
+				<li>Visayas</li>
+				<li>Mindanao</li>
 			</ul>
 		</div>
 	</div>

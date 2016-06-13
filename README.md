@@ -5,16 +5,17 @@
 ##Todo List
 
 #USER AREA
-1. Create a Greeting Function Base on User Time (SET to Philippines and 24 Hours Format)
-See this Post : http://stackoverflow.com/questions/2182511/setting-a-greeting-based-on-users-time-good-morning-good-afternoon
-2.Link the Footer Category. 
+1. Image Upload Process OOP - http://www.phpclasses.org/package/5548-PHP-Validate-and-process-uploaded-image-files.html
+2. 
 3. Adds View Counter On All the Product of the User.
+
 4. Build The Page for The Location and Query the Product
-	- Create a Locaiton.php file and Pass the Condition on the Link using $_GET[] function.
+	- Create a location.php file and Pass the Condition on the Link using $_GET[] function.
+
 5. Get The Other Category Page Done!
 6. Add Listing Page / Need to Work on the Process of Adding the Add Images.
-7. Searc Funciton on the Home Page.
-8. Sitemap on the Footer Needs to Be link.
+7. Search Funciton on the Home Page.
+8. 
 
 
 #GENERAL

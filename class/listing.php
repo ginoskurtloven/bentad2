@@ -4,7 +4,7 @@ $connection = new Database(); //Instantiate DB Connection
 class Listing {
 
 // Insert listing
-public function add_listing($item_title,$item_category,$item_price,$item_condition,$item_location,$item_desc,$item_ownercontact,$status,$user_id) {
+public function add_listing($item_title,$item_category,$item_price,$item_condition,$item_location,$item_desc,$item_ownercontact,$status,$user_id,$item_img_dir) {
 
 	global $connection; //database connection
 
@@ -15,9 +15,10 @@ public function add_listing($item_title,$item_category,$item_price,$item_conditi
 	$item_location = mysqli_real_escape_string($connection->connect(),$item_location);
 	$item_desc = mysqli_real_escape_string($connection->connect(),$item_desc);
 	$item_ownercontact = mysqli_real_escape_string($connection->connect(),$item_ownercontact);
+	$item_img_dir = mysqli_real_escape_string($connection->connect(),$item_img_dir);
 	//item status
 
-	$result = mysqli_query($connection->connect(), "INSERT listing(item_name,item_category,item_price,item_condition,item_location,item_desc,status,user_id,contact_info) VALUES('$item_title','$item_category','$item_price','$item_condition','$item_location','$item_desc','$status','$user_id','$item_ownercontact')");
+	$result = mysqli_query($connection->connect(), "INSERT listing(item_name,item_category,item_price,item_condition,item_location,item_desc,status,user_id,contact_info,item_img) VALUES('$item_title','$item_category','$item_price','$item_condition','$item_location','$item_desc','$status','$user_id','$item_ownercontact','$item_img_dir')");
 
 		return $result;
 }

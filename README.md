@@ -9,6 +9,7 @@
 2. Able to Upload Single Image in the Product Page.
 3. Optimize Image on Upload.
 4. Integrate TinyMCE - https://www.tinymce.com/
+5.
 
 
 

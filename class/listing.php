@@ -3,23 +3,42 @@ $connection = new Database(); //Instantiate DB Connection
 
 class Listing {
 
-// Insert listing
-public function add_listing($item_title,$item_category,$item_price,$item_condition,$item_location,$item_desc,$item_ownercontact,$status,$user_id,$item_img_dir) {
+	/**
+	 * @param   $parameter string, integer
+	 */
+	public function EscapeString($parameter) {
+		global $connection; //database connection
+		$db_connect = $connection->connect();
+
+		//$result = $db_connect->real_escape_string($parameter);
+		$result = mysqli_real_escape_string($db_connect,$parameter);
+		return $result;
+
+	}
+
+
+	// Insert listing
+	public function add_listing($item_title,$item_category,$item_price,$item_condition,$item_location,$item_desc,$item_ownercontact,$status,$user_id) {
 
 	global $connection; //database connection
 
-	$item_title = mysqli_real_escape_string($connection->connect(),$item_title);
-	$item_category = mysqli_real_escape_string($connection->connect(),$item_category);
-	$item_price = mysqli_real_escape_string($connection->connect(),$item_price);
-	$item_condition = mysqli_real_escape_string($connection->connect(),$item_condition);
-	$item_location = mysqli_real_escape_string($connection->connect(),$item_location);
-	$item_desc = mysqli_real_escape_string($connection->connect(),$item_desc);
-	$item_ownercontact = mysqli_real_escape_string($connection->connect(),$item_ownercontact);
-	$item_img_dir = mysqli_real_escape_string($connection->connect(),$item_img_dir);
-	//item status
+	$item_title = $this->EscapeString($item_title);
+	$item_category = $this->EscapeString($item_category);
+	$item_price = $this->EscapeString($item_price);
+	$item_condition = $this->EscapeString($item_condition);
+	$item_location = $this->EscapeString($item_location);
+	$item_desc = $this->EscapeString($item_desc);
+	$item_ownercontact = $this->EscapeString($item_ownercontact);
 
-	$result = mysqli_query($connection->connect(), "INSERT listing(item_name,item_category,item_price,item_condition,item_location,item_desc,status,user_id,contact_info,item_img) VALUES('$item_title','$item_category','$item_price','$item_condition','$item_location','$item_desc','$status','$user_id','$item_ownercontact','$item_img_dir')");
+	$query =  "INSERT listing(item_name,item_category,item_price,item_condition,item_location,item_desc,status,user_id,contact_info) VALUES('$item_title','$item_category','$item_price','$item_condition','$item_location','{$item_desc}','$status','$user_id','$item_ownercontact')";
 
+	// $result = mysqli_query($connection->connect(),$query);
+
+	if ($result = mysqli_query($connection->connect(),$query)) {
+			$result = "Add Successfully Added";
+	} else {
+			$result = "Product Add Failed";
+	}
 		return $result;
 }
 

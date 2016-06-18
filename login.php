@@ -9,11 +9,11 @@
 			<form action="" method="POST">
 			<div class="form-group">
 				<label for="email-add">Email Address</label>
-				<input class="form-control" type="text" placeholder="youremailaddress@mail.com" name="email-address" required>
+				<input class="form-control" type="text" placeholder="youremailaddress@mail.com" name="email-address" maxlength="40" required>
 			</div>
 			<div class="form-group">
 				<label for="password">Password</label>
-				<input class="form-control" type="password" placeholder="**********" name="password" required>
+				<input class="form-control" type="password" placeholder="**********" name="password" maxlength="20" required>
 			</div>
 				<input class="btn btn-success btn-md" type="submit" name="login" value="LOGIN">
 			</form>

@@ -65,7 +65,7 @@
 				</div>
 				<div class="form-group">
 					<label>Listing Images:</label>
-					<input type="file" name="product_img" multiple="">
+					<input type="file" name="upload" multiple="">
 				</div>
 				<input class="btn btn-default btn-md" type="submit" name="add_post" value="SUBMIT">
 				
@@ -82,55 +82,24 @@
 					$item_desc = $_POST['item_desc'];
 					$item_contactinfo = $_POST['contact_info'];
 					$status = "draft";
-					$item_img = $_POST['product_img'];
 
-					//Upload Process
+					//test
+					
+					//$item_img = $_POST['product_img'];
 
-					require '../class/class.imageupload.php';
+					//image upload process
+					include '../class/class.imageupload.php';
+					$image = New ImageUploader();
 
-					$image = new ImageUploader(1000, 1500, 1500, 'upload/adds/');
-
-					$image->setImage($item_img); //Name of the input image field name
-
-					//check image size
-					if (!$image->checkSize())
-						$errors[] = "File size is to Big";
-
-					//check image height
-					if(!$image->checkHeight())
-						$errors[] = "File height is Big";
-
-					if(!$image->checkWidth()) //check image width
-						$errors[] = "File width is Big";
-		
-					if(!$image->checkExt()) //check image extension
-						$errors[] = "File ext is not supported";
-
-					//if no errors process the upload
-					if(!isset($errors)){
-						$image->setImageName($item_img); //set image name
-						$image->deleteExisting();
-						$image->upload();
-		
-							echo "<h2>Product Image Added</h2>";
-					}else {
-							echo "<h2>You must correct the errors to proceed</h2><br>";
-							print_r($errors);
-						}
-
-					//Upload Process End
 					//get User Id by user email in session
 					$user = new User();
 					$user_username = $_SESSION['user_email_add'];
 					$result= $user->Fetch($user_username); //call get user function
-					$user_id = $result['user_id'];
+					$user_id = $result['user_id']; //get user id
 
-					$item_img_dir = $img->Upload();
-					
+					// $item_img_dir = $img->Upload();
 					$listing = new Listing();
-					$listing->add_listing($item_title,$item_category,$item_price,$item_condition,$item_location,$item_desc,$item_contactinfo,$status,$user_id,$item_img_dir); //insert data from the form
-
-
+					echo $listing->add_listing($item_title,$item_category,$item_price,$item_condition,$item_location,$item_desc,$item_contactinfo,$status,$user_id); //insert data from the form and return result.
 					
 				}
 			?>

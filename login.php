@@ -35,7 +35,7 @@
 		
 		if ($row == 1) {
 
-			//Set Session After Login
+			//Assign $_SESSION[] after Login
 			$_SESSION['user_email_add'] = $email_address;
 			$_SESSION['user_password'] = $password;
 			

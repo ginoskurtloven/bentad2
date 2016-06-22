@@ -28,16 +28,16 @@
 		for ($x=0; $x < count($result) ; $x++) { ?>
 
 			<div class="col-md-3">
-				    <div class="thumbnail">
-				      <a href="adds.php?id=<?php echo $result[$x][0];?>"><img class="img-responsive" src="img/product_thumb.png" alt="<?php echo $result[$x][1]; ?>"></a>
-				      <div class="caption">
-				        <h5><?php echo $result[$x][1];?></h5>
-				        <h6 class="product-price">₱<?php echo $result[$x][3];?></h6>
-				        <p><i class="fa fa-bars fa-lg" aria-hidden="true"></i> Sub-Category</p>
-				        <p><i class="fa fa-location-arrow fa-lg" aria-hidden="true"></i> <?php echo $result[$x][5]; ?></p>
-				      </div>
-				    </div>
-  				</div>
+				<div class="thumbnail">
+				  <a href="adds.php?id=<?php echo $result[$x][0];?>"><img class="img-responsive" src="img/product_thumb.png" alt="<?php echo $result[$x][1]; ?>"></a>
+				  <div class="caption">
+					<h5><?php echo $result[$x][1];?></h5>
+					<h6 class="product-price">₱<?php echo $result[$x][3];?></h6>
+					<p><i class="fa fa-bars fa-lg" aria-hidden="true"></i> Sub-Category</p>
+					<p><i class="fa fa-location-arrow fa-lg" aria-hidden="true"></i> <?php echo $result[$x][5]; ?></p>
+				  </div>
+				</div>
+  			</div>
 
 		<?php }
 		 ?>

@@ -1,8 +1,8 @@
 <?php include('inc/header.php'); ?>
 <?php include('inc/nav_bar.php'); ?>
+<marquee><strong>ANNOUNCEMENT:</strong> Lorem ipsum dolor sit amet, consectetur adipisicing elit. At perspiciatis dolorum quas aliquam fugiat, voluptatibus. Voluptatem, harum a libero nostrum, veritatis nemo.</marquee> <!-- Marquee -->
 
 <div class="container-fluid search-area">
-
 <div style="margin: auto; max-width: 650px;">
   <div class="row">
       <form class="form-inline">
@@ -42,8 +42,8 @@
 
      <div class="row">
        <div class="col-lg-5">
-         <h4>Need to upgrade? <span style="color: #28A9D1;">Join Now and Sell your Used Item here for free!</span></h4>
-         <button onclick="window.location.href='signup.php'" class="btn btn-lg btn-block btn-info"><span style="font-weight: 700;">Post Your Add Now!</span></button>
+         <h3><!-- Need to upgrade?  --><span style="text-transform: uppercase;">Join Now and Sell your Item here!</span></h4>
+         <button onclick="window.location.href='signup.php'" class="btn btn-lg btn-block btn-warning"><span style="font-weight: 700;">Post Your Add Now!</span></button>
        </div>
 
        <div class="col-lg-7">
@@ -87,7 +87,7 @@
 				 <div class="col-md-4"> 
          <div class="cat-box">
 					<center><i onclick="window.location.href='clothing-and-accessories.php'" class="fa fa-dot-circle-o fa-3x" aria-hidden="true"></i></center>
-					<p style="text-align: center;"><a href="clothing-and-accessories.php">Clothing and Accessories</a></p>
+					<p style="text-align: center;"><a href="clothing-and-accessories.php">Clothing & Accessories</a></p>
          </div> 
 				 </div>
 			 </div>

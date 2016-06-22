@@ -82,8 +82,6 @@
 					$item_desc = $_POST['item_desc'];
 					$item_contactinfo = $_POST['contact_info'];
 					$status = "draft";
-
-					//test
 					
 					//$item_img = $_POST['product_img'];
 

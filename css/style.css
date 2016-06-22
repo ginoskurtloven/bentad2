@@ -75,6 +75,19 @@ Product Area
 }
 
 
+/*
+FOOTER SECTION AREA
+ */
+
+footer a {
+	color: white;
+}
+
+footer a:hover {
+	color: white;
+}
+
+
 
 
 

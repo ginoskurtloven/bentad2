@@ -3,6 +3,9 @@
 	<div class="row">
 		<div class="col-md-3">
 			<p>Website Crafted by GinosKurtLoven</p>
+
+			<button onclick="window.location.href='portal/" class="btn btn-success btn-block">Portal Link</button>
+
 		</div>
 		<div class="col-md-3">
 			<ul style="list-style: none;">
@@ -36,6 +39,7 @@
 	</div>
 </div>
 </footer>
+
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 <script src="js/jquery.min.js"></script>
 <!-- Include all compiled plugins (below), or include individual files as needed -->

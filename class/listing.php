@@ -17,6 +17,7 @@ class Listing {
 	}
 
 
+
 	// Insert listing
 	public function add_listing($item_title,$item_category,$item_price,$item_condition,$item_location,$item_desc,$item_ownercontact,$status,$user_id) {
 
@@ -37,10 +38,11 @@ class Listing {
 	if ($result = mysqli_query($connection->connect(),$query)) {
 			$result = "Add Successfully Added";
 	} else {
-			$result = "Product Add Failed";
+			$result = "Product Add Failed"; //throw error
 	}
 		return $result;
 }
+
 
 
 //Get Number of Draft Listing

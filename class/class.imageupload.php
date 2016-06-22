@@ -3,7 +3,7 @@
 
 class ImageUploader {
 
-
+private $arrayName = array('' => , );
 	
 
 
